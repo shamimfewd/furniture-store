@@ -1,10 +1,16 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { IoIosHeartEmpty } from "react-icons/io";
+import { BsBag } from "react-icons/bs";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [test, setTest] = useState(false);
+  const handleCheck = () => {
+    setTest(true);
+  };
+  console.log(test);
   const navOptions = (
     <>
       <ul className=" lg:flex lg:space-x-4">
@@ -29,13 +35,10 @@ const Navbar = () => {
         <div className="container px-6 py-4 mx-auto">
           <div className="lg:flex lg:items-center">
             <div className="flex items-center justify-between">
-              <a href="#">
-                <img
-                  className="w-auto h-6 sm:h-7"
-                  src="https://merakiui.com/images/full-logo.svg"
-                  alt=""
-                />
-              </a>
+              <Link to={"/"} className="text-2xl font-bold">
+                {" "}
+                <span className="text-red-400">Comfort</span> Cove
+              </Link>
 
               {/* <!-- Mobile menu button --> */}
               <div className="flex lg:hidden">
@@ -100,35 +103,58 @@ const Navbar = () => {
             >
               <div className="flex flex-col text-gray-600 capitalize dark:text-gray-300 lg:flex lg:px-16 lg:-mx-4 lg:flex-row lg:items-center">
                 {navOptions}
+                <ul
+                  onTouchMove={handleCheck}
+                  className="menu menu-horizontal px-1 "
+                >
+                  <li>
+                    <details className="">
+                      <summary>Blogs</summary>
+                      <ul className="p-2 w-screen">
+                        <li>
+                          <a>Submenu 1</a>
+                        </li>
+                        <li>
+                          <a>Submenu 2</a>
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+                </ul>
               </div>
 
-              <div className="flex  mt-6 lg:flex lg:mt-0 lg:-mx-2">
-             
+              <div className="flex  mt-6 lg:flex lg:mt-0 lg:-mx-2 gap-6">
+                <button className="relative">
+                  <span className="w-[20px] h-[20px] bg-red-500 text-white p-2 rounded-full absolute flex items-center justify-center -right-1 -top-1">
+                    12
+                  </span>
+                  <IoIosHeartEmpty className="text-3xl " />
+                </button>
+                <button className="relative">
+                  <span className="w-[20px] h-[20px] bg-red-500 text-white p-2 rounded-full absolute flex items-center justify-center -right-1 -top-1">
+                    12
+                  </span>
+                  <BsBag className="text-2xl" />
+                </button>
+
 
                 <div className="dropdown dropdown-end">
-                  <div
-                    tabIndex={0}
-                    role="button"
-                    className=""
-                  >
-                   
+                  <div tabIndex={0} role="button" className="">
                     <div className="">
                       <button
                         className="flex justify-evenly border 
-                      rounded-md items-center p-1 "
+                      rounded-3xl items-center px-2 py-1 gap-2 "
                       >
                         <span className="">
                           <RxHamburgerMenu className="text-2xl" />
                         </span>
 
-                        
-                          <img
-                            className="rounded-full w-8 h-8 
+                        <img
+                          className="rounded-full w-8 h-8 
                              "
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLe5PABjXc17cjIMOibECLM7ppDwMmiDg6Dw&s"
-                            alt=""
-                          />
-                    
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLe5PABjXc17cjIMOibECLM7ppDwMmiDg6Dw&s"
+                          alt=""
+                        />
                       </button>
                     </div>
                   </div>

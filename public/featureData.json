@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "image": "https://i5.walmartimages.com/seo/Ktaxon-Mid-century-Modern-Arm-Chair-with-Solid-Wood-Frame-Lounge-Chair-Club-Chair-Beige_1ea2183c-312d-42b8-86ce-0a4e29c01e34.1ef0681284d42574916e7c11dc914d61.jpeg",
+    "category": "chair",
+    "title": "Ergonomic Office Chair",
+    "description": "A comfortable chair with adjustable height and lumbar support."
+  },
+  {
+    "id": 2,
+    "image": "https://simg.nicepng.com/png/small/67-670795_cover-chair-muuto-cover-chair-red.png",
+    "category": "chair",
+    "title": "Wooden Dining Chair",
+    "description": "A classic wooden chair perfect for dining rooms."
+  },
+  {
+    "id": 3,
+    "image": "https://5.imimg.com/data5/FF/YX/MY-38923839/workstation-cushion-chairs-500x500.jpg",
+    "category": "chair",
+    "title": "Recliner Chair",
+    "description": "A plush recliner with a footrest for ultimate relaxation."
+  },
+  {
+    "id": 4,
+    "image": "https://www.tacc.co.ke/wp-content/uploads/2023/05/PDINTBL74_Walnut_1.jpg",
+    "category": "table",
+    "title": "Glass Coffee Table",
+    "description": "A modern coffee table with a glass top and metal legs."
+  },
+  {
+    "id": 5,
+    "image": "https://m.media-amazon.com/images/I/31TJGaHs8SL._AC_UF894,1000_QL80_.jpg",
+    "category": "table",
+    "title": "Wooden Dining Table",
+    "description": "A large wooden dining table that seats up to six people."
+  },
+  {
+    "id": 6,
+    "image": "https://cdn11.bigcommerce.com/s-v0hunw0leo/images/stencil/300x300/products/24286/1312842/10957-1__81880.1710292066.jpg?c=1",
+    "category": "table",
+    "title": "Study Desk",
+    "description": "A sturdy desk with ample space for studying or working from home."
+  },
+  {
+    "id": 7,
+    "image": "https://modern-interiors.net/cdn/shop/products/EEI-4406-PNK_960x.jpg?v=1621894438",
+    "category": "sofa",
+    "title": "Leather Sofa",
+    "description": "A luxurious leather sofa with deep cushions."
+  },
+  {
+    "id": 8,
+    "image": "https://www.manoirhomewares.com.au/cdn/shop/products/LC61-3-Seater-Sofa-Dust-Blue-05_1_860x_b7e41d6e-22f7-4916-8c24-1325a1db1abd_1200x1200.jpg?v=1627950233",
+    "category": "sofa",
+    "title": "Sectional Sofa",
+    "description": "A large sectional sofa that can be arranged in multiple ways."
+  },
+  {
+    "id": 9,
+    "image": "https://img.vivense.com/720x480/images/8472662c68a84e16ae3b8d9546836e0c.jpg?v=1.45.8",
+    "category": "sofa",
+    "title": "Sleeper Sofa",
+    "description": "A versatile sleeper sofa that doubles as a bed."
+  },
+  {
+    "id": 10,
+    "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/showpiece-figurine/8/t/l/20-20-craft-iron-standing-peacock-tealight-sandhya-craft-36-original-imaghcavftyheszh.jpeg?q=90&crop=false",
+    "category": "gifts",
+    "title": "Decorative Vase",
+    "description": "A beautifully crafted vase perfect for any home decor."
+  },
+  {
+    "id": 11,
+    "image": "https://m.media-amazon.com/images/I/51AuVAm55UL._AC_.jpg",
+    "category": "gifts",
+    "title": "Picture Frame Set",
+    "description": "A set of picture frames in various sizes for displaying memories."
+  },
+  {
+    "id": 12,
+    "image": "https://static-01.daraz.com.bd/p/fab2a6143ba45b34dc2ca7c446587b02.jpg_750x750.jpg_.webp",
+    "category": "gifts",
+    "title": "Scented Candle Collection",
+    "description": "A collection of scented candles in various fragrances."
+  },
+  {
+    "id": 13,
+    "image": "https://i.pinimg.com/564x/89/cf/ac/89cfac8ef82b8de94def93bb7f4e3498.jpg",
+    "category": "chair",
+    "title": "Gaming Chair",
+    "description": "A chair designed for gaming with ergonomic features."
+  },
+  {
+    "id": 14,
+    "image": "https://www.bfx.com.au/store/media/catalog/product/cache/624dbac69e8cf9a17439446896d1b414/g/p/gp_table_1500x750-25_-_fixed_-_wi_-_zincworks.jpg",
+    "category": "table",
+    "title": "Bedside Table",
+    "description": "A compact bedside table with a drawer for storage."
+  },
+  {
+    "id": 15,
+    "image": "https://i5.walmartimages.com/seo/3-Seater-Sofa-Couch-Modern-Linen-Tufed-Upholstered-2-Pillows-Armrest-Design-Wooden-Tapered-Legs-Accent-Arm-Sofas-Living-Room-Bedroom-Office-Grey_04ec8f14-062d-44d0-9aed-9dac7be853b9.5e2b287cd25bd91421fd9bb39412dbc8.jpeg",
+    "category": "sofa",
+    "title": "Loveseat",
+    "description": "A cozy loveseat perfect for small spaces."
+  },
+  {
+    "id": 16,
+    "image": "https://www.vedasexports.com/wp-content/uploads/2021/07/9100000009223-2.jpg",
+    "category": "gifts",
+    "title": "Wall Art",
+    "description": "A piece of modern wall art to enhance your living space."
+  }
+]
