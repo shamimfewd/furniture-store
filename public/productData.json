@@ -1,0 +1,570 @@
+[
+  {
+    "id": 1,
+    "name": "Modern Sofa",
+    "description": "A comfortable modern sofa with a sleek design, perfect for any living room.",
+    "price": 899.99,
+    "category": "Living Room",
+    "brand": "Comfort Home",
+    "stock": 25,
+    "dimensions": {
+      "width": "200cm",
+      "height": "90cm",
+      "depth": "100cm"
+    },
+    "material": "Fabric",
+    "color": "Gray",
+    "rating": 4.6,
+    "reviews": [
+      {
+        "user": "alice_w",
+        "rating": 5,
+        "comment": "Super comfortable and looks great in my living room."
+      },
+      {
+        "user": "bob_k",
+        "rating": 4,
+        "comment": "Nice sofa, but delivery was delayed."
+      }
+    ],
+    "images": [
+      "https://example.com/images/modern_sofa_front.jpg",
+      "https://example.com/images/modern_sofa_side.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Wooden Dining Table",
+    "description": "A sturdy wooden dining table that can seat up to six people.",
+    "price": 499.99,
+    "category": "Dining Room",
+    "brand": "Classic Woodworks",
+    "stock": 15,
+    "dimensions": {
+      "width": "180cm",
+      "height": "75cm",
+      "depth": "90cm"
+    },
+    "material": "Oak Wood",
+    "color": "Natural",
+    "rating": 4.8,
+    "reviews": [
+      {
+        "user": "charlie_m",
+        "rating": 5,
+        "comment": "Beautiful table, very solid construction."
+      },
+      {
+        "user": "dana_l",
+        "rating": 4.5,
+        "comment": "Great table, but a bit difficult to assemble."
+      }
+    ],
+    "images": [
+      "https://example.com/images/dining_table_front.jpg",
+      "https://example.com/images/dining_table_top.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Office Chair",
+    "description": "Ergonomic office chair with adjustable height and lumbar support.",
+    "price": 149.99,
+    "category": "Office",
+    "brand": "ErgoWork",
+    "stock": 50,
+    "dimensions": {
+      "width": "60cm",
+      "height": "100-120cm",
+      "depth": "60cm"
+    },
+    "material": "Mesh",
+    "color": "Black",
+    "rating": 4.3,
+    "reviews": [
+      {
+        "user": "eve_r",
+        "rating": 4,
+        "comment": "Very comfortable, but the armrests are a bit hard."
+      },
+      {
+        "user": "frank_t",
+        "rating": 4.5,
+        "comment": "Good chair for the price, easy to adjust."
+      }
+    ],
+    "images": [
+      "https://example.com/images/office_chair_front.jpg",
+      "https://example.com/images/office_chair_back.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Queen Bed Frame",
+    "description": "Elegant queen bed frame with a sturdy wooden construction.",
+    "price": 299.99,
+    "category": "Bedroom",
+    "brand": "DreamSleep",
+    "stock": 20,
+    "dimensions": {
+      "width": "160cm",
+      "height": "120cm",
+      "depth": "200cm"
+    },
+    "material": "Wood",
+    "color": "White",
+    "rating": 4.7,
+    "reviews": [
+      {
+        "user": "gina_p",
+        "rating": 5,
+        "comment": "Very sturdy and looks beautiful."
+      },
+      {
+        "user": "harry_g",
+        "rating": 4.5,
+        "comment": "Good bed frame, but assembly took some time."
+      }
+    ],
+    "images": [
+      "https://example.com/images/bed_frame_front.jpg",
+      "https://example.com/images/bed_frame_side.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Bookshelf",
+    "description": "A tall bookshelf with multiple shelves for ample storage.",
+    "price": 129.99,
+    "category": "Living Room",
+    "brand": "ShelfMaster",
+    "stock": 35,
+    "dimensions": {
+      "width": "80cm",
+      "height": "200cm",
+      "depth": "30cm"
+    },
+    "material": "MDF",
+    "color": "Dark Brown",
+    "rating": 4.4,
+    "reviews": [
+      {
+        "user": "ian_t",
+        "rating": 4,
+        "comment": "Nice bookshelf, but the material could be better."
+      },
+      {
+        "user": "julia_r",
+        "rating": 4.5,
+        "comment": "Good value for the price."
+      }
+    ],
+    "images": [
+      "https://example.com/images/bookshelf_front.jpg",
+      "https://example.com/images/bookshelf_side.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Coffee Table",
+    "description": "Stylish coffee table with a glass top and wooden legs.",
+    "price": 199.99,
+    "category": "Living Room",
+    "brand": "GlassWood",
+    "stock": 40,
+    "dimensions": {
+      "width": "120cm",
+      "height": "45cm",
+      "depth": "60cm"
+    },
+    "material": "Glass and Wood",
+    "color": "Natural",
+    "rating": 4.5,
+    "reviews": [
+      {
+        "user": "kevin_m",
+        "rating": 5,
+        "comment": "Beautiful design and very sturdy."
+      },
+      {
+        "user": "lisa_s",
+        "rating": 4,
+        "comment": "Nice table, but glass is a bit thin."
+      }
+    ],
+    "images": [
+      "https://example.com/images/coffee_table_front.jpg",
+      "https://example.com/images/coffee_table_side.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Recliner Chair",
+    "description": "Comfortable recliner chair with adjustable positions.",
+    "price": 299.99,
+    "category": "Living Room",
+    "brand": "RelaxIt",
+    "stock": 30,
+    "dimensions": {
+      "width": "90cm",
+      "height": "100cm",
+      "depth": "100cm"
+    },
+    "material": "Leather",
+    "color": "Black",
+    "rating": 4.6,
+    "reviews": [
+      {
+        "user": "mike_j",
+        "rating": 5,
+        "comment": "Extremely comfortable, perfect for relaxing."
+      },
+      {
+        "user": "nina_f",
+        "rating": 4.5,
+        "comment": "Great chair, but a bit bulky."
+      }
+    ],
+    "images": [
+      "https://example.com/images/recliner_front.jpg",
+      "https://example.com/images/recliner_side.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Dining Chair Set",
+    "description": "Set of four stylish dining chairs with cushioned seats.",
+    "price": 199.99,
+    "category": "Dining Room",
+    "brand": "SeatCozy",
+    "stock": 60,
+    "dimensions": {
+      "width": "50cm",
+      "height": "100cm",
+      "depth": "50cm"
+    },
+    "material": "Wood and Fabric",
+    "color": "Beige",
+    "rating": 4.5,
+    "reviews": [
+      {
+        "user": "oliver_p",
+        "rating": 5,
+        "comment": "Very comfortable and stylish chairs."
+      },
+      {
+        "user": "penny_l",
+        "rating": 4,
+        "comment": "Good chairs, but fabric stains easily."
+      }
+    ],
+    "images": [
+      "https://example.com/images/dining_chair_set_front.jpg",
+      "https://example.com/images/dining_chair_set_side.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Nightstand",
+    "description": "Elegant nightstand with two drawers for storage.",
+    "price": 89.99,
+    "category": "Bedroom",
+    "brand": "NightWood",
+    "stock": 45,
+    "dimensions": {
+      "width": "50cm",
+      "height": "60cm",
+      "depth": "40cm"
+    },
+    "material": "Wood",
+    "color": "White",
+    "rating": 4.4,
+    "reviews": [
+      {
+        "user": "quincy_d",
+        "rating": 4,
+        "comment": "Nice nightstand, but drawers are a bit small."
+      },
+      {
+        "user": "rachel_f",
+        "rating": 4.5,
+        "comment": "Looks great in my bedroom."
+      }
+    ],
+    "images": [
+      "https://example.com/images/nightstand_front.jpg",
+      "https://example.com/images/nightstand_side.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Wardrobe",
+    "description": "Spacious wardrobe with multiple compartments and hanging space.",
+    "price": 599.99,
+    "category": "Bedroom",
+    "brand": "StoragePlus",
+    "stock": 20,
+    "dimensions": {
+      "width": "120cm",
+      "height": "200cm",
+      "depth": "60cm"
+    },
+    "material": "MDF",
+    "color": "Walnut",
+    "rating": 4.6,
+    "reviews": [
+      {
+        "user": "simon_g",
+        "rating": 5,
+        "comment": "Lots of space, perfect for my clothes."
+      },
+      {
+        "user": "tina_m",
+        "rating": 4.5,
+        "comment": "Good wardrobe, but a bit tricky to assemble."
+      }
+    ],
+    "images": [
+      "https://example.com/images/wardrobe_front.jpg",
+      "https://example.com/images/wardrobe_inside.jpg"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "TV Stand",
+    "description": "Modern TV stand with storage compartments.",
+    "price": 149.99,
+    "category": "Living Room",
+    "brand": "MediaPro",
+    "stock": 30,
+    "dimensions": {
+      "width": "150cm",
+      "height": "50cm",
+      "depth": "40cm"
+    },
+    "material": "MDF",
+    "color": "Black",
+    "rating": 4.3,
+    "reviews": [
+      {
+        "user": "ursula_h",
+        "rating": 4,
+        "comment": "Nice TV stand, but shelves are a bit small."
+      },
+      {
+        "user": "victor_k",
+        "rating": 4.5,
+        "comment": "Good value for the price."
+      }
+    ],
+    "images": [
+      "https://example.com/images/tv_stand_front.jpg",
+      "https://example.com/images/tv_stand_side.jpg"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Desk",
+    "description": "Spacious desk with a smooth wooden surface and drawers.",
+    "price": 199.99,
+    "category": "Office",
+    "brand": "WorkSpace",
+    "stock": 40,
+    "dimensions": {
+      "width": "140cm",
+      "height": "75cm",
+      "depth": "60cm"
+    },
+    "material": "Wood",
+    "color": "Oak",
+    "rating": 4.5,
+    "reviews": [
+      {
+        "user": "wendy_n",
+        "rating": 5,
+        "comment": "Great desk, very sturdy and lots of space."
+      },
+      {
+        "user": "xavier_p",
+        "rating": 4.5,
+        "comment": "Good desk, but a bit heavy."
+      }
+    ],
+    "images": [
+      "https://example.com/images/desk_front.jpg",
+      "https://example.com/images/desk_side.jpg"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Bar Stool",
+    "description": "Stylish bar stool with a cushioned seat and footrest.",
+    "price": 79.99,
+    "category": "Kitchen",
+    "brand": "SitHigh",
+    "stock": 50,
+    "dimensions": {
+      "width": "40cm",
+      "height": "80cm",
+      "depth": "40cm"
+    },
+    "material": "Metal and Fabric",
+    "color": "Black",
+    "rating": 4.4,
+    "reviews": [
+      {
+        "user": "yasmin_h",
+        "rating": 4,
+        "comment": "Nice stool, but could be more comfortable."
+      },
+      {
+        "user": "zack_e",
+        "rating": 4.5,
+        "comment": "Great value for the price."
+      }
+    ],
+    "images": [
+      "https://example.com/images/bar_stool_front.jpg",
+      "https://example.com/images/bar_stool_side.jpg"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Sectional Sofa",
+    "description": "Large sectional sofa with a comfortable design and modern look.",
+    "price": 1299.99,
+    "category": "Living Room",
+    "brand": "ComfortPlus",
+    "stock": 10,
+    "dimensions": {
+      "width": "300cm",
+      "height": "90cm",
+      "depth": "200cm"
+    },
+    "material": "Fabric",
+    "color": "Blue",
+    "rating": 4.7,
+    "reviews": [
+      {
+        "user": "anna_m",
+        "rating": 5,
+        "comment": "Perfect for my family room, very spacious."
+      },
+      {
+        "user": "brian_k",
+        "rating": 4.5,
+        "comment": "Great sofa, but delivery was delayed."
+      }
+    ],
+    "images": [
+      "https://example.com/images/sectional_sofa_front.jpg",
+      "https://example.com/images/sectional_sofa_side.jpg"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Dresser",
+    "description": "Elegant dresser with multiple drawers for ample storage.",
+    "price": 399.99,
+    "category": "Bedroom",
+    "brand": "StorageMax",
+    "stock": 15,
+    "dimensions": {
+      "width": "120cm",
+      "height": "100cm",
+      "depth": "50cm"
+    },
+    "material": "Wood",
+    "color": "Cherry",
+    "rating": 4.6,
+    "reviews": [
+      {
+        "user": "carl_w",
+        "rating": 5,
+        "comment": "Lots of storage space, very elegant design."
+      },
+      {
+        "user": "diana_s",
+        "rating": 4.5,
+        "comment": "Great dresser, but a bit heavy."
+      }
+    ],
+    "images": [
+      "https://example.com/images/dresser_front.jpg",
+      "https://example.com/images/dresser_side.jpg"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Outdoor Patio Set",
+    "description": "Complete patio set with table and chairs, perfect for outdoor gatherings.",
+    "price": 599.99,
+    "category": "Outdoor",
+    "brand": "PatioLiving",
+    "stock": 20,
+    "dimensions": {
+      "table": {
+        "width": "150cm",
+        "height": "75cm",
+        "depth": "90cm"
+      },
+      "chair": {
+        "width": "60cm",
+        "height": "90cm",
+        "depth": "60cm"
+      }
+    },
+    "material": "Metal and Fabric",
+    "color": "Brown",
+    "rating": 4.6,
+    "reviews": [
+      {
+        "user": "eric_t",
+        "rating": 5,
+        "comment": "Perfect for my patio, very comfortable."
+      },
+      {
+        "user": "fiona_p",
+        "rating": 4.5,
+        "comment": "Great set, but assembly was a bit tricky."
+      }
+    ],
+    "images": [
+      "https://example.com/images/patio_set_front.jpg",
+      "https://example.com/images/patio_set_side.jpg"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Kitchen Island",
+    "description": "Functional kitchen island with storage shelves and a wooden top.",
+    "price": 299.99,
+    "category": "Kitchen",
+    "brand": "KitchenPro",
+    "stock": 25,
+    "dimensions": {
+      "width": "120cm",
+      "height": "90cm",
+      "depth": "60cm"
+    },
+    "material": "Wood",
+    "color": "White",
+    "rating": 4.5,
+    "reviews": [
+      {
+        "user": "greg_j",
+        "rating": 5,
+        "comment": "Very functional, lots of storage space."
+      },
+      {
+        "user": "hanna_l",
+        "rating": 4.5,
+        "comment": "Great addition to my kitchen."
+      }
+    ],
+    "images": [
+      "https://example.com/images/kitchen_island_front.jpg",
+      "https://example.com/images/kitchen_island_side.jpg"
+    ]
+  }
+]

@@ -81,13 +81,7 @@ const Footer = () => {
           <hr className="my-6 border-gray-200 md:my-8 dark:border-gray-700" />
 
           <div className="flex items-center justify-between">
-            <a href="#">
-              <img
-                className="w-auto h-7"
-                src="https://merakiui.com/images/full-logo.svg"
-                alt=""
-              />
-            </a>
+            <h3 className="text-3xl">Comfort Cove</h3>
 
             <div className="flex -mx-2">
               <a

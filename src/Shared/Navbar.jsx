@@ -10,7 +10,7 @@ const Navbar = () => {
   const handleCheck = () => {
     setTest(true);
   };
-  console.log(test);
+
   const navOptions = (
     <>
       <ul className=" lg:flex lg:space-x-4">
@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className="bg-white shadow dark:bg-gray-800">
-        <div className="container px-6 py-4 mx-auto">
+        <div className="container px-6 py-4  bg-white">
           <div className="lg:flex lg:items-center">
             <div className="flex items-center justify-between">
               <Link to={"/"} className="text-2xl font-bold">
@@ -137,7 +137,6 @@ const Navbar = () => {
                   <BsBag className="text-2xl" />
                 </button>
 
-
                 <div className="dropdown dropdown-end">
                   <div tabIndex={0} role="button" className="">
                     <div className="">
@@ -176,8 +175,6 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </div>
-
-                {/* ================= */}
               </div>
             </div>
           </div>
