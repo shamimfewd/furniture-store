@@ -2,7 +2,7 @@ import Button from "./Button";
 import { Link } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
-  console.log(product);
+  
   const { id, name, description, category, price, brand, stock } = product;
 
   return (
@@ -83,9 +83,9 @@ const ProductCard = ({ product }) => {
                 </span>
               </div>
             </div>
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <Button className="" content={"Add to Cart"} />
-            </div>
+            </div> */}
           </div>
         </div>
       </Link>

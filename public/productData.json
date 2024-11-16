@@ -38,7 +38,7 @@
     "description": "A sturdy wooden dining table that can seat up to six people.",
     "price": 499.99,
     "category": "Dining Room",
-    "brand": "Classic Woodworks",
+    "brand": "Classic Woodworks", 
     "stock": 15,
     "dimensions": {
       "width": "180cm",
