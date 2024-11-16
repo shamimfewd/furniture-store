@@ -5,7 +5,7 @@ const Parallex = () => {
         className=" bg-fixed flex justify-center items-center  bg-no-repeat bg-cover  h-[70vh] object-left"
         style={{
           backgroundImage:
-            "url('https://t3.ftcdn.net/jpg/02/71/05/60/360_F_271056073_C0tbpNLFbcGurqxoMXqPBrx8vzL9VLVY.jpg')",
+            "url('https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
         }}
       >
         <div className="text-center mx-auto">
