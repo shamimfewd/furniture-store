@@ -26,6 +26,9 @@ const Navbar = () => {
         <li>
           <NavLink>Dashboard</NavLink>
         </li>
+        <li>
+          <NavLink to={"/register"}>Registration</NavLink>
+        </li>
       </ul>
     </>
   );

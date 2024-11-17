@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "../Pages/Home/Home";
 import Main from "../Main/Main";
 import ProductDetails from "../Pages/DatailsPage/ProductDetails";
+import Register from "../Pages/Register/Register";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,11 @@ const router = createBrowserRouter([
         loader: () => fetch("/productData.json"),
       },
     ],
+  },
+
+  {
+    path: "/register",
+    element: <Register />,
   },
 ]);
 
