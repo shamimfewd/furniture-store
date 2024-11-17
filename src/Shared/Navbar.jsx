@@ -23,11 +23,14 @@ const Navbar = () => {
         <li>
           <NavLink>Products</NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink>Dashboard</NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink to={"/register"}>Registration</NavLink>
+        </li>
+        <li>
+          <NavLink to={"/login"}>LogIn</NavLink>
         </li>
       </ul>
     </>
