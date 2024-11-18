@@ -2,15 +2,30 @@ import { useForm } from "react-hook-form";
 import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { FaTwitter } from "react-icons/fa6";
+import { useContext } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Register = () => {
+  const { createUser } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    const { name, email, password } = data;
+    createUser(email, password)
+      .then(() => {
+        navigate("/");
+      })
+      .catch((error) => console.log(error));
+    console.log(data);
+  };
+
   return (
     <div className="p-10 bg-slate-400 shadow-lg">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
@@ -78,6 +93,12 @@ const Register = () => {
 
             {/* social login */}
             <div className="flex w-full flex-col border-opacity-50">
+              <p className="text-sm">
+                Already you have an account please{" "}
+                <Link to={"/login"} className="text-blue-800">
+                  Log In
+                </Link>{" "}
+              </p>
               <div className="divider">OR</div>
               <div className="flex justify-center gap-4 place-items-center">
                 <FcGoogle className="text-4xl" />

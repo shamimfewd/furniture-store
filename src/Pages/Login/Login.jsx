@@ -2,15 +2,35 @@ import { useForm } from "react-hook-form";
 import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { FaTwitter } from "react-icons/fa6";
+import { useContext } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const { loginUser, googleLogIn } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const location = useLocation();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const handleGoogleLogIn = () => {
+    googleLogIn()
+      .then(() => {
+        navigate(location.state || "/");
+      })
+      .catch();
+  };
+
+  const onSubmit = (data) => {
+    const { email, password } = data;
+    loginUser(email, password)
+      .then(() => navigate(location.state || "/"))
+      .catch((error) => console.log(error));
+  };
+
   return (
     <div>
       <div className="p-10 bg-slate-400 shadow-lg flex items-center h-[100vh]">
@@ -64,9 +84,17 @@ const Login = () => {
 
               {/* social login */}
               <div className="flex w-full flex-col border-opacity-50">
+                <p className="text-sm">
+                  If you have no account please{" "}
+                  <Link to={"/register"} className="text-blue-800">
+                    Register
+                  </Link>{" "}
+                  first
+                </p>
+
                 <div className="divider">OR</div>
                 <div className="flex justify-center gap-4 place-items-center">
-                  <FcGoogle className="text-4xl" />
+                  <FcGoogle onClick={handleGoogleLogIn} className="text-4xl" />
                   <FaFacebook className="text-4xl text-[#0862F7]" />
                   <FaTwitter className="text-4xl text-[#1C9BE9]" />
                 </div>

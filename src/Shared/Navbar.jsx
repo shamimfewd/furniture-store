@@ -1,14 +1,23 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { BsBag } from "react-icons/bs";
+import { AuthContext } from "../Providers/AuthProvider";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [test, setTest] = useState(false);
+
+  const { logOut, user } = useContext(AuthContext);
   const handleCheck = () => {
     setTest(true);
+  };
+
+  const handleLogout = () => {
+    logOut()
+      .then((result) => console.log(result))
+      .catch((error) => console.log(error));
   };
 
   const navOptions = (
@@ -129,59 +138,63 @@ const Navbar = () => {
                 </ul>
               </div>
 
-              <div className="flex  mt-6 lg:flex lg:mt-0 lg:-mx-2 gap-6">
-                <button className="relative">
-                  <span className="w-[20px] h-[20px] bg-red-500 text-white p-2 rounded-full absolute flex items-center justify-center -right-1 -top-1">
-                    12
-                  </span>
-                  <IoIosHeartEmpty className="text-3xl " />
-                </button>
-                <button className="relative">
-                  <span className="w-[20px] h-[20px] bg-red-500 text-white p-2 rounded-full absolute flex items-center justify-center -right-1 -top-1">
-                    12
-                  </span>
-                  <BsBag className="text-2xl" />
-                </button>
+              {user ? (
+                <div className="flex  mt-6 lg:flex lg:mt-0 lg:-mx-2 gap-6">
+                  <button className="relative">
+                    <span className="w-[20px] h-[20px] bg-red-500 text-white p-2 rounded-full absolute flex items-center justify-center -right-1 -top-1">
+                      12
+                    </span>
+                    <IoIosHeartEmpty className="text-3xl " />
+                  </button>
+                  <button className="relative">
+                    <span className="w-[20px] h-[20px] bg-red-500 text-white p-2 rounded-full absolute flex items-center justify-center -right-1 -top-1">
+                      12
+                    </span>
+                    <BsBag className="text-2xl" />
+                  </button>
 
-                <div className="dropdown dropdown-end">
-                  <div tabIndex={0} role="button" className="">
-                    <div className="">
-                      <button
-                        className="flex justify-evenly border 
-                      rounded-3xl items-center px-2 py-1 gap-2 "
-                      >
-                        <span className="">
-                          <RxHamburgerMenu className="text-2xl" />
-                        </span>
+                  <div className="dropdown dropdown-end">
+                    <div tabIndex={0} role="button" className="">
+                      <div className="">
+                        <button
+                          className="flex justify-evenly border 
+          rounded-3xl items-center px-2 py-1 gap-2 "
+                        >
+                          <span className="">
+                            <RxHamburgerMenu className="text-2xl" />
+                          </span>
 
-                        <img
-                          className="rounded-full w-8 h-8 
-                             "
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLe5PABjXc17cjIMOibECLM7ppDwMmiDg6Dw&s"
-                          alt=""
-                        />
-                      </button>
+                          <img
+                            className="rounded-full w-8 h-8 
+                 "
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLe5PABjXc17cjIMOibECLM7ppDwMmiDg6Dw&s"
+                            alt=""
+                          />
+                        </button>
+                      </div>
                     </div>
+                    <ul
+                      tabIndex={0}
+                      className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                    >
+                      <li>
+                        <a className="justify-between">
+                          Profile
+                          <span className="badge">New</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a>Settings</a>
+                      </li>
+                      <li>
+                        <button onClick={handleLogout}>LogOut</button>
+                      </li>
+                    </ul>
                   </div>
-                  <ul
-                    tabIndex={0}
-                    className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-                  >
-                    <li>
-                      <a className="justify-between">
-                        Profile
-                        <span className="badge">New</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>Settings</a>
-                    </li>
-                    <li>
-                      <a>Logout</a>
-                    </li>
-                  </ul>
                 </div>
-              </div>
+              ) : (
+                <NavLink to={"/login"}>LogIn</NavLink>
+              )}
             </div>
           </div>
         </div>
