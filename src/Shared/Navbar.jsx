@@ -32,15 +32,12 @@ const Navbar = () => {
         <li>
           <NavLink>Products</NavLink>
         </li>
+        <li>
+          <NavLink to={'/addProduct'}>Add Product</NavLink>
+        </li>
         {/* <li>
           <NavLink>Dashboard</NavLink>
         </li> */}
-        <li>
-          <NavLink to={"/register"}>Registration</NavLink>
-        </li>
-        <li>
-          <NavLink to={"/login"}>LogIn</NavLink>
-        </li>
       </ul>
     </>
   );
@@ -193,7 +190,25 @@ const Navbar = () => {
                   </div>
                 </div>
               ) : (
-                <NavLink to={"/login"}>LogIn</NavLink>
+                <div className="">
+                  <NavLink
+                    className={
+                      " bg-[#1F2937] text-white p-3 hover:bg-[#415A77] l-rounded-sm transition-colors duration-300"
+                    }
+                    to={"/login"}
+                  >
+                    LogIn <span className="ml-5">|</span>
+                  </NavLink>
+
+                  <NavLink
+                    className={
+                      "bg-[#1F2937] text-white p-3 hover:bg-[#415A77] transition-colors duration-300"
+                    }
+                    to={"/register"}
+                  >
+                    Register
+                  </NavLink>
+                </div>
               )}
             </div>
           </div>

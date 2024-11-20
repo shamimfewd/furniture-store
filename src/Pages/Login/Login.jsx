@@ -94,9 +94,12 @@ const Login = () => {
 
                 <div className="divider">OR</div>
                 <div className="flex justify-center gap-4 place-items-center">
-                  <FcGoogle onClick={handleGoogleLogIn} className="text-4xl" />
-                  <FaFacebook className="text-4xl text-[#0862F7]" />
-                  <FaTwitter className="text-4xl text-[#1C9BE9]" />
+                  <FcGoogle
+                    onClick={handleGoogleLogIn}
+                    className="text-4xl cursor-pointer"
+                  />
+                  <FaFacebook className="text-4xl text-[#0862F7] cursor-pointer" />
+                  <FaTwitter className="text-4xl text-[#1C9BE9] cursor-pointer" />
                 </div>
               </div>
             </div>
