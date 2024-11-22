@@ -7,6 +7,7 @@ import Login from "../Pages/Login/Login";
 import PrivateRoute from "./PrivateRoute";
 import AddProduct from "../Pages/AddProduct/AddProduct";
 import Dashboard from "../Pages/Dashboard/Dashboard";
+import AdminHome from "../Pages/Dashboard/Admin/AdminHome";
 
 const router = createBrowserRouter([
   {
@@ -43,8 +44,18 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/dashboard",
+    path: "dashboard",
     element: <Dashboard />,
+    children: [
+      {
+        path: "adminHome",
+        element: <AdminHome />,
+      },
+      {
+        path: "addProduct",
+        element: <AddProduct />,
+      },
+    ],
   },
 ]);
 

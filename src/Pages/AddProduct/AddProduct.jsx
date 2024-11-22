@@ -43,6 +43,36 @@ const AddProduct = () => {
         {errors.description && <span>This field is required</span>}
         <br />
         <br />
+        <input {...register("name", { required: true })} />
+        {/* errors will return when field validation fails  */}
+        {errors.name && <span>This field is required</span>}
+        <br />
+        <br />
+        <input {...register("description", { required: true })} />
+        {/* errors will return when field validation fails  */}
+        {errors.description && <span>This field is required</span>}
+        <br />
+        <br />
+        <input {...register("name", { required: true })} />
+        {/* errors will return when field validation fails  */}
+        {errors.name && <span>This field is required</span>}
+        <br />
+        <br />
+        <input {...register("description", { required: true })} />
+        {/* errors will return when field validation fails  */}
+        {errors.description && <span>This field is required</span>}
+        <br />
+        <br />
+        <input {...register("name", { required: true })} />
+        {/* errors will return when field validation fails  */}
+        {errors.name && <span>This field is required</span>}
+        <br />
+        <br />
+        <input {...register("description", { required: true })} />
+        {/* errors will return when field validation fails  */}
+        {errors.description && <span>This field is required</span>}
+        <br />
+        <br />
         <input type="submit" className="cursor-pointer" />
       </form>
     </div>
