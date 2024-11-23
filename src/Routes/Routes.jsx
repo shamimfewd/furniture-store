@@ -44,11 +44,11 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "dashboard",
+    path: "dashboard/adminHome",
     element: <Dashboard />,
     children: [
       {
-        path: "adminHome",
+        path: "dashboard/adminHome",
         element: <AdminHome />,
       },
       {

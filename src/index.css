@@ -8,6 +8,8 @@
   --primary-color: #db4234;
   --secondary-color: #2ecc71;
   --section-title: #1f2937;
+  --input-color: #f8fafb;
+  
 }
 
 body {
@@ -21,10 +23,7 @@ body {
   transform: translateY(-50%);
   z-index: 10;
   cursor: pointer;
-  background-color: #1F2937;
+  background-color: #1f2937;
   color: white;
   padding: 10px;
-  
 }
-
-

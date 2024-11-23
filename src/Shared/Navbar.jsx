@@ -32,9 +32,12 @@ const Navbar = () => {
         <li>
           <NavLink>Products</NavLink>
         </li>
-        <li>
-          <NavLink to={"/dashboard"}>Dashboard</NavLink>
-        </li>
+        {user && (
+          <li>
+            <NavLink to={"/dashboard"}>Dashboard</NavLink>
+          </li>
+        )}
+
         <li>
           <NavLink to={"/addProduct"}>Add Product</NavLink>
         </li>
