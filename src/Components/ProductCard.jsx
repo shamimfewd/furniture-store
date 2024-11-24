@@ -2,7 +2,6 @@ import Button from "./Button";
 import { Link } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
-  
   const { id, name, description, category, price, brand, stock } = product;
 
   return (
@@ -15,7 +14,7 @@ const ProductCard = ({ product }) => {
           >
             <img
               className="object-cover"
-              src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c25lYWtlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              src="https://i.ebayimg.com/thumbs/images/g/8loAAOSwvNhhnyYJ/s-l1200.jpg"
               alt="product image"
             />
             <span className="absolute top-0 left-0 m-2 rounded-full bg-gray-800 px-2 text-center text-sm font-medium text-white">

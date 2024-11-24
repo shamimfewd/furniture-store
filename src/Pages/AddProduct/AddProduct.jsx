@@ -15,6 +15,7 @@ const AddProduct = () => {
     const productInfo = {
       name: data.name,
       description: data.description,
+      price: data.price,
     };
 
     fetch("http://localhost:5000/addProduct", {
@@ -83,11 +84,11 @@ const AddProduct = () => {
                   </label>
                   <input
                     className="w-full  bg-[#f2f2f2a0] p-2 rounded-md border-none outline-none"
-                    {...register("name", { required: true })}
+                    {...register("price", { required: true })}
                     placeholder="$ 25.50"
                   />
                   {/* errors will return when field validation fails  */}
-                  {errors.name && <span>This field is required</span>}
+                  {errors.price && <span>This field is required</span>}
                 </div>
               </div>
             </div>
@@ -102,33 +103,29 @@ const AddProduct = () => {
                   <input
                     type="file"
                     className="w-full text-gray-400 file-input-ghost cursor-pointer bg-[#f2f2f2a0] p-2 rounded-md border-none outline-none"
-                    {...register("name", { required: true })}
+                    {...register("image", { required: true })}
                     placeholder=""
                   />
                   {/* errors will return when field validation fails  */}
-                  {errors.name && <span>This field is required</span>}
+                  {errors.image && <span>This field is required</span>}
                 </div>
               </div>
-              {/* ============================= */}
+              {/* Category Area============================= */}
               <div className="border p-5 bg-[#FFFFFF] rounded-md shadow-sm">
                 <div className="p-2">
                   <h4 className="text-lg pb-4">Category</h4>
-                  {/* 
-                  <input
-                    type="file"
-                    className="w-full text-gray-400 file-input-ghost cursor-pointer bg-[#f2f2f2a0] p-2 rounded-md border-none outline-none"
-                    {...register("name", { required: true })}
-                    placeholder=""
-                  /> */}
+
                   <label className="text-gray-600 text-sm" htmlFor="name">
                     Product Photo
                   </label>
                   <select className="select  w-full rounded-md bg-[#f2f2f2a0]">
                     <option disabled selected>
-                      Who shot first?
+                      Chose a Category
                     </option>
-                    <option>Han Solo</option>
-                    <option>Greedo</option>
+                    <option>Dining Room</option>
+                    <option>Office</option>
+                    <option>Living Room</option>
+                    <option>Bedroom</option>
                   </select>
                 </div>
               </div>
