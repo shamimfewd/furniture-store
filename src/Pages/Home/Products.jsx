@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import SectionTitle from "../../Components/SectionTitle";
 import ProductCard from "../../Components/ProductCard";
 import Button from "../../Components/Button";
+import useAxios from "../../Hook/useAxios";
 
 const Products = () => {
+  const test = useAxios();
   const [products, setProducts] = useState([]);
   const [visible, setVisible] = useState(12);
 
@@ -15,6 +17,13 @@ const Products = () => {
     setVisible((prevData) => prevData - 4);
   };
 
+  // fetch all data
+  const getData = async () => {
+    const { data } = await test.get("/getProducts");
+    setProducts(data);
+  };
+
+  getData();
   useEffect(() => {
     fetch("productData.json")
       .then((res) => res.json())
